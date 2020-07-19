@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, shrink-to-fit=no, user-scalable=0" />
+  <title>My Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+    integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+</head>
+
+<body>
+  <header>
+    <nav class="nav">
+      <h1 id="logo">Portfolio</h1>
+      <ul class="nav-links">
+        <li><a href="#About">About</a></li>
+        <li><a href="#Projects">Projects</a></li>
+        <li><a href="#Contact">Contact</a></li>
+      </ul>
+      <div class="burger">
+        <div class="line-1"></div>
+        <div class="line-2"></div>
+        <div class="line-3"></div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section data-scroll>
+      <div class="hero">
+        <div class="hero__text">
+          <!-- <h1 class="fancy">Hi! I'm Firdy, a Web & UI/UX Designer</h1> -->
+          <h2>Hi! I'm Firdy, </h2>
+          <h2>a Web & UI/UX Designer</h2>
+          <p>Short story about you</p>
+          <button class="btn">Get CV <i class="fas fa-file-alt"></i></button>
+        </div>
+        <div class="hero__img">
+          <img src="./img/heroportofolio1.png" width="450px" alt="hero">
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div id="About" class="ability">
+        <h2 class="ability__title">What i can do.</h2>
+        <div class="ability__container">
+          <div class="ability__one lax" data-lax-preset="driftLeft-10">
+            <img src="./img/Ability1.png" alt="ability-1">
+            <h3>Research & Brainstorming</h3>
+            <p class="ability__paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum excepturi aperiam reiciendis alias nihil
+              consequatur! Modi eligendi tenetur adipisci vitae?
+            </p>
+          </div>
+          <div class="ability__two lax" data-lax-preset="driftRight-10">
+            <img src="./img/Ability2.png" alt="">
+            <h3>Implement into UI/UX Design</h3>
+            <p class="ability__paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro quasi ex perspiciatis, architecto incidunt
+              ad rerum possimus adipisci totam alias?
+            </p>
+          </div>
+          <div class="ability__three lax" data-lax-preset="driftLeft-10">
+            <img src="./img/Ability3.png" alt="">
+            <h3>Actual Prototyping </h3>
+            <p class="ability__paragraph">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta, at. Velit quaerat perferendis magni,
+              quidem sequi animi aliquid officia doloribus?
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section data-scroll id="Projects" class="project">
+      <div>
+        <h2 class="project-title">This is what i have done.</h2>
+      </div>
+      <div class="grid-container">
+        <div class="grid-item grid-item__item-1">
+          <a href=""><img src="./img/img1.jpg" alt="">
+            <h3>Project Name</h3>
+            <p>Web & UI/UX Design</p>
+          </a>
+        </div>
+        <div class="grid-item grid-item__item-2">
+          <a href=""><img src="./img/img2.jpg" alt="">
+          </a>
+        </div>
+        <div class="grid-item grid-item__item-3">
+          <a href=""><img src="./img/img3.jpg" alt="">
+          </a>
+        </div>
+        <div class="grid-item grid-item__item-4">
+          <a href=""><img src="./img/img4.jpg" alt="">
+          </a>
+        </div>
+        <div class="grid-item grid-item__item-5">
+          <a href=""><img src="./img/img5.jpg" alt="">
+          </a>
+          </a>
+        </div>
+      </div>
+      <button class="btn">Shows all &rarr;</button>
+    </section>
+
+    <section data-scroll>
+
+      <div id="Contact" class="contact">
+        <h2 class="contact__title">
+          I'm currently available for freelance work.
+        </h2>
+        <h3 class="contact__text">
+          If you interested to collaborate or just want to say hi, just let me
+          know.
+        </h3>
+        <button class="btn contact__btn"> Message me <i class="far fa-envelope"></i></button>
+      </div>
+    </section>
+    <footer>
+      <div class="footer">
+        <div class="footer__items">
+          <ul class="footer__list">
+            <li>
+              <a href="https://github.com/firdyimas157"><i class="fab fa-github "></i></i></a>
+            </li>
+            <li>
+              <a href="dribbble.com/firdyimas157"><i class="fab fa-dribbble "></i></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/firdyimas157"><i class="fab fa-linkedin-in"></i></a>
+            </li>
+          </ul>
+        </div>
+        <h3 class="footer__sign">
+          &copy; 2020. Firdy Imas Endyarsa. All rights reserved.
+        </h3>
+      </div>
+    </footer>
+  </main>
+
+  <!-- scrollout plugins -->
+  <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+
+  <script>
+    ScrollOut();
+  </script>
+
+  <!-- lax js -->
+  <script src="./node_modules/lax.js/lib/lax.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
+  <script>
+    window.onload = function () {
+      lax.setup() // init
+
+      const updateLax = () => {
+        lax.update(window.scrollY)
+        window.requestAnimationFrame(updateLax)
+      }
+
+      window.requestAnimationFrame(updateLax)
+    }
+  </script>
+  <!-- main js script -->
+  <script src="script.js"></script>
+</body>
+
+</html>

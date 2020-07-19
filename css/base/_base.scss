@@ -1,0 +1,32 @@
+*,
+*::before,
+*::after {
+    margin: auto;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    box-sizing: border-box;
+}
+
+[data-scroll] {
+    transition: all 1.5s;
+
+}
+
+[data-scroll="in"] {
+    opacity: 1;
+    transform: translateX(0);
+
+}
+
+[data-scroll="out"] {
+    opacity: 0;
+    transform: translateX(-200px);
+}
